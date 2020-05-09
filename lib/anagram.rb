@@ -6,8 +6,11 @@ class Anagram
   end
   
   def match(array)
-    array.each do |word|
-      if word.split.sort == @word.split.sort
-    end
+    matches = []
+    array.each do |potential_match|
+      if potential_match.split.sort == @word.split.sort
+        matches << potential_match
+      end
+    matches
   end
 end
