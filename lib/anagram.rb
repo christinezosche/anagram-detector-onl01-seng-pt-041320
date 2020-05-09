@@ -11,6 +11,7 @@ class Anagram
       if potential_match.split.sort == @word.split.sort
         matches << potential_match
       end
+    end
     matches
   end
 end
